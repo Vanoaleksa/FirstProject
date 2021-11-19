@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="root">
+        <div class="pos">
+            <div class="desktop-header">
+                <div class="container-header">
+                    <span class="spring-logo-div">
+                        <a class="spring-logo" href="../The best project/index.html">
+                            <span id="spring-logo-span"></span>
+                        </a>
+                    </span>
+                    <ul class="navbar">
+                        <li class="navbar-link sss">
+                            <a class="a-navbar" href="#">home</a>
+                        </li>
+                        <li class="navbar-link">
+                            <a class="a-navbar" href="#">projects</a>
+                        </li>
+                        <li class="navbar-link">
+                            <a class="a-navbar" href="#">guides</a>
+                        </li>
+                        <li class="navbar-link">
+                            <a class="a-navbar" href="#">blog</a>
+                        </li>
+                        <li class="navbar-link">
+                            <a class="a-navbar" href="#">training & certification</a>
+                        </li>
+                        <li class="navbar-link search-navbar" onclick="sayHi()" >
+                            <a class="a-navbar-search" href="#">
+                                <i class="fa fa-search" ></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-header">
+                    <div class="left_column">
+                        <div class="mobile-search">
+                            <input type="text" oninput="search_left_column()" class="input-search_left_column" placeholder="Search for..." />
+                        </div>
+                        <ul class="navbar">
+                            <li class="navbar-link">
+                                <a class="a-navbar" href="#">home</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a class="a-navbar" href="#">projects</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a class="a-navbar" href="#">guides</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a class="a-navbar" href="#">blog</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a class="a-navbar" href="#">training & certification</a>
+                            </li>
+                        </ul>
+                    </div>    
+                    <div class="div_mob-container-header">
+                        <div class="mob-spring-logo-div1" onclick="menu()">
+                            <span id="mob-icon"></span>
+                        </div>
+                        <div class="mob-spring-logo-div2">                    
+                            <span id="mob-spring-logo-span"></span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="search-drop-header-nothidden">
+                <div class="container-header">
+                    <div class="search-form-container">
+                        <input type="text" oninput="search()" class="input-search" placeholder="Search for..." />
+                        <button class="search-button-input">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-middle">
+            <div class="middle">
+                <h1>
+                    Основные проекты
+                </h1>
+                <p>От конфигурации до безопасности, от веб-приложений до больших данных - какими бы ни были потребности вашего приложения в 
+                    инфраструктуре, есть <strong>Spring Project</strong>, который поможет вам создать его. Начните с малого и используйте то, 
+                    что вам нужно - <strong>Spring имеет модульную конструкцию</strong>
+                </p>
+                <div class="section-content">
+                    <div class="container-section">
+                        <div class="container-logo">
+                            <div id="icon-logo-1"></div>
+                        </div>
+                        <div class="project-title">SPRING BOOT</div>
+                        <p class="project-description">
+                            Takes an opinionated view of building Spring applications and gets you up and running as quickly as possible.
+                        </p>
+                    </div>
+                    <div class="container-section">
+                        <div class="container-logo">
+                            <div id="icon-logo-2"></div>
+                        </div>
+                        <div class="project-title">SPRING FRAMEWORK</div>
+                        <p class="project-description">
+                            Provides core support for dependency injection, transaction management, web apps, data access, messaging and more.
+                        </p>
+                    </div>
+                    <div class="container-section">
+                        <div class="container-logo">
+                            <div id="icon-logo-3"></div>
+                        </div>
+                        <div class="project-title">SPRING CLOUD DATA FLOW</div>
+                        <p class="project-description">
+                            An orchestration service for composable data microservice applications on modern runtimes.
+                        </p>
+                    </div>
+                    <div class="container-section">
+                        <div class="container-logo">
+                            <div id="icon-logo-4"></div>
+                        </div>
+                        <div class="project-title">SPRING CLOUD</div>
+                        <p class="project-description">
+                            Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices.
+                        </p>
+                    </div>
+                    <div class="container-section">
+                        <div class="container-logo">
+                            <div id="icon-logo-5"></div>
+                        </div>
+                        <div class="project-title">SPRING DATA</div>
+                        <p class="project-description">
+                            Provides a set of tools for common patterns in distributed systems. Useful for building and deploying microservices.
+                        </p>
+                    </div>
+                    <div class="container-section">
+                        <div class="container-logo">
+                            <div id="icon-logo-6"></div>
+                        </div>
+                        <div class="project-title">SPRING INTEGRATION</div>
+                        <p class="project-description">
+                            Supports the well-known <em>Enterprise Integration Patterns</em> via lightweight messaging and declarative adapters.
+                        </p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <script src="./js/search.js"></script>
+    <script src="./js/input.js"></script>
+</body>
+</html>
